@@ -69,15 +69,15 @@ parameter:
     default_value: none
   - name: x_columns
     description: "train columns (format : value1,value2)"
-    required: true
+    required: False
     default_value: OIL_PICKUP_HYDRAULIC_HEAD,ALPHA_VALUE,INITIAL_VALUE_COMPENSATION,INITIAL_VALUE,INPUT_POWER,LPIPE_HEIGHT,WITHSTANDING_VOLTAGE,Inspection_Name,Current,Final_Pg,Frequency,Initial_Pg,Leak_A,Rise_Pg_t,Vib_BAND,Vib_OA,Voltage,Watt
   - name: y_column
     description: "predict column"
-    required: true
+    required: False
     default_value: _401__index_v2_TBPL
   - name: ignore_columns
     description: "Ignore(reference) columns (format : value1,value2)"
-    required: true
+    required: False
     default_value: LOTID,TABLE_TIME,MODEL
 
   - name: dashboard_log
